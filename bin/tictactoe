@@ -7,7 +7,7 @@ puts "Please select the number of players (0, 1, or 2):"
 
 a = gets.strip
     if a == "0" || a == "1" || a == "2"
-      num_players = gets.strip
+      num_players = a
     else
       puts "Invalid entry, please select the number of players (0, 1, or 2)."
       start
