@@ -1,3 +1,4 @@
+require 'pry'
 class Computer < Player
 
   # def display
@@ -9,11 +10,11 @@ class Computer < Player
   #   puts " #{self.cells[6]} | #{self.cells[7]} | #{self.cells[8]} "
   #   puts "-----------"
   # end
-  # 
+  #
   # def taken?(input)
   #   self.position(input) == "X" || self.position(input) == "O"
   # end
-  # 
+  #
   # def valid_move?(input)
   #   if input.to_i != 0
   #     return true if taken?(input) == false && ((input.to_i) - 1).between?(0,8)
