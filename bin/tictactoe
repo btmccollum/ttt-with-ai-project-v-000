@@ -41,6 +41,7 @@ b = gets.strip
           new_game = Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new)
         end
       end
+    "Alright, let's get started!"
     new_game.play
     "Would you like to play again? (y/n)"
     gets.strip
