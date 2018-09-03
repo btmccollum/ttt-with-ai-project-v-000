@@ -21,7 +21,7 @@ b = gets.strip
     puts "Invalid entry."
     start
   end
-puts "Thank you!"
+puts "Thank you! Starting new game..."
       if a == "0"
         if b == "2"
           new_game = Game.new(Players::Computer.new("O"), Players::Computer.new("X"), Board.new)
