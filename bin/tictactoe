@@ -28,18 +28,21 @@ puts "Thank you! Starting new game..."
         else
           new_game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new)
         end
+        new_game
       elsif a == "1"
         if b == "2"
           new_game = Game.new(Players::Human.new("O"), Players::Computer.new("X"), Board.new)
         else
           new_game = Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new)
         end
+        new_game
       else
         if b == "2"
           new_game = Game.new(Players::Human.new("O"), Players::Human.new("X"), Board.new)
         else
           new_game = Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new)
         end
+        new_game
       end
     "Alright, let's get started!"
     new_game.play
