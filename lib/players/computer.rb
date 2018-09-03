@@ -22,7 +22,7 @@ class Players::Computer < Player
   # end
 
   def move(board)
-    # binding.pry
+    binding.pry
     WIN_COMBINATIONS.any? do |combo|
       a = self.board.cells[combo[0]]
       b = self.board.cells[combo[1]]
@@ -34,7 +34,7 @@ class Players::Computer < Player
       else
         nil
       end
-      binding.pry
+      # binding.pry
     end
   end
 
