@@ -21,20 +21,20 @@ a = gets.strip
       puts "Invalid entry."
       start
     end
-      if num_players == "0"
-        if first_p == "2"
+      if a == "0"
+        if b == "2"
           new_game = Game.new(Players::Computer.new("O"), Players::Computer.new("X"))
         else
           new_game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
         end
-      elsif num_players == "1"
-        if first_p == "2"
+      elsif a == "1"
+        if b == "2"
           new_game = Game.new(Players::Human.new("O"), Players::Computer.new("X"))
         else
           new_game = Game.new(Players::Human.new("X"), Players::Computer.new("O"))
         end
       else
-        if first_p == "2"
+        if b == "2"
           new_game = Game.new(Players::Human.new("O"), Players::Human.new("X"))
         else
           new_game = Game.new(Players::Human.new("X"), Players::Computer.new("O"))
