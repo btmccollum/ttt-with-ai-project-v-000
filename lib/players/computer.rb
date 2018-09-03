@@ -51,7 +51,7 @@ class Players::Computer < Player
       end
       #   positions.sample unless
       #   next
-      end
+      # end
       # binding.pry
     end
   end
