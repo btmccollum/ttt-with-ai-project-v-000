@@ -52,7 +52,7 @@ class Game
   # def start
   #   puts "Welcome to Tic-Tac-Toe!"
   #   puts "Please select the number of players (0, 1, or 2):"
-  # 
+  #
   #   gets.strip
   #     if gets.strip == "0" || gets.strip == "1" || gets.strip == "2"
   #       num_players = gets.strip
@@ -60,7 +60,7 @@ class Game
   #       puts "Invalid entry, please select the number of players (0, 1, or 2)."
   #       start
   #     end
-  # 
+  #
   #   puts "Will Player 1 or Player 2 be X? Please enter either 1 or 2:"
   #   gets.strip
   #     if gets.strip == "1" || gets.strip == "2"
@@ -97,7 +97,7 @@ class Game
   #       "Thank you for playing Tic-Tac-Toe!"
   #       exit
   #     end
-  # 
+  #
   #   end
 
   def play
