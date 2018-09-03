@@ -35,7 +35,7 @@ class Players::Computer < Player
   def move(board)
     # binding.pry
     WIN_COMBINATIONS.any? do |combo|
-      binding.pry
+      # binding.pry
       a = board.cells[(combo[0])]
       b = board.cells[(combo[1])]
       c = board.cells[(combo[2])]
@@ -43,7 +43,7 @@ class Players::Computer < Player
       if !board.taken?(a) && !board.taken?(b) && !board.taken?(c)
         combo.sample
       # else
-      #   positions.sample unless 
+      #   positions.sample unless
       #   next
       end
       # binding.pry
