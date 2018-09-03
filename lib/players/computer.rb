@@ -1,5 +1,5 @@
 require 'pry'
-class Computer < Player
+class Players::Computer < Player
 
   # def display
   #   puts "-----------"
