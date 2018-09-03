@@ -21,24 +21,24 @@ else
   puts "Invalid entry."
   start
 end
-    
+
       if a == "0"
         if b == "2"
-          new_game = Game.new(Players::Computer.new("O"), Players::Computer.new("X"))
+          new_game = Game.new(Players::Computer.new("O"), Players::Computer.new("X"), Board.new)
         else
-          new_game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
+          new_game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new)
         end
       elsif a == "1"
         if b == "2"
-          new_game = Game.new(Players::Human.new("O"), Players::Computer.new("X"))
+          new_game = Game.new(Players::Human.new("O"), Players::Computer.new("X"), Board.new)
         else
-          new_game = Game.new(Players::Human.new("X"), Players::Computer.new("O"))
+          new_game = Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new)
         end
       else
         if b == "2"
-          new_game = Game.new(Players::Human.new("O"), Players::Human.new("X"))
+          new_game = Game.new(Players::Human.new("O"), Players::Human.new("X"), Board.new)
         else
-          new_game = Game.new(Players::Human.new("X"), Players::Computer.new("O"))
+          new_game = Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new)
         end
       end
     new_game.play
