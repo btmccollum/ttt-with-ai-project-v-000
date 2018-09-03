@@ -34,6 +34,7 @@ class Players::Computer < Player
 
   def move(board)
     # binding.pry
+    puts "Where will you place your token?"
     WIN_COMBINATIONS.any? do |combo|
       # binding.pry
       a = board.cells[(combo[0])]
