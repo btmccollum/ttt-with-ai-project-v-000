@@ -44,6 +44,7 @@ puts "Thank you! Starting new game..."
         end
         new_game
       end
+      new_game
     "Alright, let's get started!"
     new_game.play
     "Would you like to play again? (y/n)"
