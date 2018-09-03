@@ -29,8 +29,8 @@ class Players::Computer < Player
       c = self.board.cells[combo[2]]
       combos = [a, b, c]
 
-      if self.board.taken?(combos.any)
-        return combo
+      if self.board.taken?(combos)
+        combos.sample
       else
         nil
       end
