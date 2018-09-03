@@ -106,6 +106,7 @@ class Game
   end
 
   def turn
+    puts "#{current_player}, you are up!"
     player = self.current_player
     move = self.current_player.move(board)
     if self.board.valid_move?(move)
