@@ -39,11 +39,11 @@ class Players::Computer < Player
       a = board.cells[(combo[0])]
       b = board.cells[(combo[1])]
       c = board.cells[(combo[2])]
-      combos = [a, b, c]
-
+      positions = [1,2,3,4,5,6,7,8,9]
       if !board.taken?(a) && !board.taken?(b) && !board.taken?(c)
         combo.sample
       # else
+      #   positions.sample unless 
       #   next
       end
       # binding.pry
