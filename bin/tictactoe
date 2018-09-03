@@ -49,4 +49,3 @@ gets.strip
       "Thank you for playing Tic-Tac-Toe!"
       exit
     end
-
