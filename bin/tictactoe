@@ -14,9 +14,9 @@ a = gets.strip
     end
 
   puts "Will Player 1 or Player 2 be X? Please enter either 1 or 2:"
-  gets.strip
-    if gets.strip == "1" || gets.strip == "2"
-      first_p = gets.strip
+  b = gets.strip
+    if b == "1" || b == "2"
+      first_p = b
     else
       puts "Invalid entry."
       start
