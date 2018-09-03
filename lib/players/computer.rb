@@ -35,9 +35,9 @@ class Players::Computer < Player
   def move(board)
     binding.pry
     WIN_COMBINATIONS.any? do |combo|
-      a = self.board.cells[combo[0]]
-      b = self.board.cells[combo[1]]
-      c = self.board.cells[combo[2]]
+      a = board.cells[(combo[0])]
+      b = board.cells[(combo[1])]
+      c = board.cells[(combo[2])]
       combos = [a, b, c]
 
       if self.board.taken?(combos)
