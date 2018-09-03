@@ -5,8 +5,8 @@ require_relative '../config/environment'
 puts "Welcome to Tic-Tac-Toe!"
 puts "Please select the number of players (0, 1, or 2):"
 
-gets.strip
-    if gets.strip == "0" || gets.strip == "1" || gets.strip == "2"
+a = gets.strip
+    if a == "0" || a == "1" || a == "2"
       num_players = gets.strip
     else
       puts "Invalid entry, please select the number of players (0, 1, or 2)."
