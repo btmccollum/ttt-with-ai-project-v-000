@@ -41,10 +41,10 @@ class Players::Computer < Player
       c = board.cells[(combo[2])]
       combos = [a, b, c]
 
-      if self.board.taken?(combos)
-        combos.sample
+      if board.taken?(a) && board.taken?(b) && board.taken?(c)
+        combo.sample
       else
-        nil
+        next
       end
       # binding.pry
     end
