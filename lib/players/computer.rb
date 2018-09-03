@@ -43,8 +43,8 @@ class Players::Computer < Player
 
       if board.taken?(a) && board.taken?(b) && board.taken?(c)
         combo.sample
-      else
-        next
+      # else
+      #   next
       end
       # binding.pry
     end
