@@ -42,13 +42,13 @@ class Players::Computer < Player
       c = board.cells[(combo[2])]
       positions = [1,2,3,4,5,6,7,8,9]
       if !board.taken?(a) && !board.taken?(b) && !board.taken?(c)
-        return (combo.sample + 1).to_s
+        puts (combo.sample + 1).to_s
       elsif a.token == self.token || b.token == self.token || c.token == self.token
-        return (combo.sample + 1).to_s
+        puts (combo.sample + 1).to_s
       else
         test = positions.sample
         taken?(test)
-        return test.to_s
+        puts test.to_s
       end
       #   positions.sample unless
       #   next
