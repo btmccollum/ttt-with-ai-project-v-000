@@ -41,7 +41,7 @@ class Players::Computer < Player
       c = board.cells[(combo[2])]
       positions = [1,2,3,4,5,6,7,8,9]
       if !board.taken?(a) && !board.taken?(b) && !board.taken?(c)
-        combo.sample
+        return combo.sample
       # else
       #   positions.sample unless
       #   next
